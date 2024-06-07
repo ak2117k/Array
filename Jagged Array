@@ -1,0 +1,28 @@
+// Program for the jagged array and converting a class to an array or using the concept of an array in a class.
+
+//jagged array :- Jagged array is an array in which we we have the defined no of rows but we dont know the length of the columns. We can make a jagged array in a 2D or 3D array also. The benefit of suing a jagged array is we can define the length of each indvidual element of the array .
+
+import java.net.StandardSocketOptions;
+
+class Main{
+    public static void main(String[] args) {
+        int array[]={2,3,4}; //normal array
+        int array2[][]=new int[3][]; // jagged array
+        array2[0]= new int[2];
+        array2[1]= new int[3];
+        array2[2]=new int[1];
+        for(int i=0;i<array2.length;i++){
+            for(int j=0;j<array2[i].length;j++){
+                array2[i][j]=(int)(Math.random()*10);
+            }
+        }
+        for( int num[]:array2){
+            for(int m:num){
+                System.out.print(m+ " ");
+            }System.out.println();
+
+        }
+
+
+    }
+}
